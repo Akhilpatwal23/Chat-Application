@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="@drawable/luffy">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+
+        android:layout_marginBottom="73dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:backgroundTintMode="add"
+        android:weightSum="100">
+
+
+
+        <EditText
+            android:id="@+id/messageBox"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="90"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/message_box_background2"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:hint="enter your text"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/message_button"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+
+            android:layout_margin="9dp"
+            android:paddingRight="10dp"
+            android:layout_weight="10"
+            android:text="SEND"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+    </LinearLayout>
+</RelativeLayout>
